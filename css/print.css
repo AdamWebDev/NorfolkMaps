@@ -1,0 +1,3 @@
+html,body {height: 100%;}
+.navbar,#sidebar {display:none;}
+#content {width: 100%;}

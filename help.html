@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Norfolk County Mapping</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Mapping Projects">
+  <meta name="author" content="Norfolk County">
+
+  <!-- Le styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+  <link href="css/print.css" rel="stylesheet" media="print">
+  <link href="js/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body class="claro" onorientationchange="orientationChanged();">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" id="lblAppName">Map Norfolk - Community</a>
+          <a class="btn pull-right" href="index.html">Back to map</a>
+        </div> <!-- /container-fluid -->
+      </div> <!-- /navbar-inner -->
+    </div> <!-- /navbar -->
+    <div class="row-fluid">
+      <div id="content">
+        <div class="row-fluid">
+          <div id="text-content">
+            <h1>Online Help</h1>
+            <h2>About the Application</h2> 
+            <p>This application was developed to allow the public to easily identify community features, locate them and access information and links for these features.  The application also includes a search tool which can be used to find civic addresses, streets and towns within Norfolk County.  The application was developed by Norfolk GIS and Information System Services.  For additional questions please contact <a href="mailto:norfolkgis@norfolkcounty.ca">NorfolkGIS@norfolkcounty.ca</a>.</p>
+            <h2>System Requirements</h2>
+              <ul>
+              <li>One of the following web browsers:</li>
+              <ul>
+                <li>Internet Explorer 8 (or greater)</li>
+                <li>Firefox</li>
+                <li>Google Chrome</li>
+                <li>Safari</li>
+              </ul>
+                <li>Minimum Screen Resolution: 1024 x 768</li>
+                <li>Recommended Screen Resolution: 1280 x 1024</li>
+                <li>High-speed internet connection</li>
+              </ul>
+            <h2>Map Navigation</h2>
+              <p><a href="img/help/zoom.jpg" class="fancybox"><img src="img/help/zoom.jpg" alt="" class="thumb"></a>You can use any of the following methods to navigate the map:</p>
+              <ul>
+                <li>Use can use the “+” and “-“ buttons to adjust your zoom level. </li>
+                <li>Roll your mouse roller to zoom in/out.</li>
+                <li>Hold down the shift key and drag a box on the map to zoom in.</li>
+                <li>Hold your right mouse button down and drag your curser to pan about the map.</li>
+              </ul>
+            <h2>Browsing Features</h2>
+            <p><a href="img/help/browse-features.jpg" class="fancybox"><img src="img/help/browse-features.jpg" alt="" class="thumb"></a>Click on the feature name to display all the individual features in the map.  Now click on the desired feature to have the map zoom to that feature.</p>
+            <h2>Feature Information</h2>
+              <p><a href="img/help/feature-details.jpg" class="fancybox"><img src="img/help/feature-details.jpg" alt="" class="thumb"></a>Click on the feature itself to display it’s information, links and directions.</p>
+            <h2>Searching</h2>
+              <p><a href="img/help/search.jpg" class="fancybox"><img src="img/help/search.jpg" alt="" class="thumb"></a>The search box can be used to find Civic Addresses, Roads and Towns.  Type your search into the box and then click on the Search button and select your type of search.  Please note that apostrophes do not work with a search.</p>
+              <p>Search results will appear in the top left corner of the application.  Click on the search result to zoom into your feature.</p>
+              <a href="img/help/search-results.jpg" class="fancybox"><img src="img/help/search-results.jpg" alt="" class="thumb"></a>
+            <h2>Current Location</h2>
+              <img src="img/imgGeolocation.png" alt="" class="thumb-noresize"><p>To find your current location, click on the Current location button, it will use your computer’s IP address to locate you on the map.</p>
+            <h2>Tools</h2><a href="img/help/tools.jpg" class="fancybox"><img src="img/help/tools.jpg" alt="" class="thumb"></a>
+              <h3>Add Point</h3><p>Under the Tools menu, ch3ck on Add Point.  Then click anywhere on the map to add a point which will appear as a small red flag.</p>
+              <h3>Add Extent</h3>
+                <p>Under the Tools menu, click on Add Extent.  Then click and hold down and drag your box to the desired location and then let go to finish.</p>
+              <h3>Add Polygon</h3>
+                <p>Under the Tools menu, click on Add Polygon.  Then begin to create your polygon by clicking or adding points around it.  Double click to finish your polygon.</p>
+              <h3>Add Line</h3>
+                <p>Under the Tools menu, click and drag a line to the desired location and then let go to finish.</p>
+              <h3>Clear All</h3>
+                <p>Click Clear All to remove all graphics from your map.</p>
+              <h3>Measure</h3>
+                <p><a href="img/help/measure.jpg" class="fancybox"><img src="img/help/measure.jpg" alt="" class="thumb"></a>When you click on the Measure option it will display the Measuring Tools on the left side of the screen.  You can then use the measuring tools to find the length of a line, measure the area of a polygon or find the coordinates of a defined location. To measure a line or polygon, click on the desired tool button and start clicking along your line or polygon, then double click to end your measurement. To find a coordinate, click on the tool button and then to the desired location and the coordinate will be displayed.
+              <h2>Social Media</h2>
+                <p><a href="img/help/social-media.jpg" class="fancybox"><img src="img/help/social-media.jpg" alt="" class="thumb"></a>Share your map with others by clicking on the Social Media tool button. From here you can go to Twitter, Facebook or Email.</p>
+              <h2>Base Maps</h2>
+                <p>Base Maps are the geographical information that provide the background to the mapping application.  This application contains 3 different base maps which can be changed using this tool by clicking on the Base Maps button.</p>
+                <h3>Community Base Map</h3>
+                  <p><a href="img/help/community-map.jpg" class="fancybox"><img src="img/help/community-map.jpg" alt="" class="thumb"></a>This base map contains detailed information including, streets, property lines, buildings, schools, woodlots, sports fields and parking.</p>
+                <h3 class="clear">Street Base Map</h3>
+                  <p><a href="img/help/base-map.jpg" class="fancybox"><img src="img/help/base-map.jpg" alt="" class="thumb"></a>This base map is a basic road map showing streets, property lines, parks and schools.</p>
+                <h3 class="clear">2010 Aerial Imagery Base Map</h3>
+                  <p><a href="img/help/aerial-map.jpg" class="fancybox"><img src="img/help/aerial-map.jpg" alt="" class="thumb"></a>This base map contains the 2010 air photography, property lines and street names.</p>
+                <div class="clear"></div>
+          </div>
+        </div><!--/row-->
+      </div><!--/span-->
+    </div><!--/row-->
+    <footer class="row-fluid">
+      &copy; 2013 Norfolk County
+    </footer>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $(".fancybox").fancybox();
+        });
+</script>
+  </body>
+  </html>
